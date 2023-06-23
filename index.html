@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    font-family: 'Baloo 2', cursive;
+    /* flex-wrap: wrap; */
+}
+a{
+    text-decoration: none;
+color:black;
+padding: 10px;
+}
+a:hover{
+    background-color: aqua;
+    padding: 5px;
+}
+a:nth-child(5){
+    background-color:#009999;
+}
+.nav{
+    display: flex;
+    gap: 23px;
+    margin-left: 650px;
+    /* flex-wrap: wrap; */
+}
+.fa{
+    font-size: 40px;
+    color:red;
+}
+.shopleft h3{
+    color: gray;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.shopleft{
+    width: 750px;
+    font-family: 'Baloo 2', cursive;
+    
+}
+.shopleft h1{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.shopleft p{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.shop{
+    display: flex;
+}
+img{
+    margin-top: 100px;
+    margin-right: 300px;
+    width:400px;
+    height:300px;
+    position: relative;
+    z-index: 999;
+}
+.image::after{
+    content: "";
+    position: absolute;
+    width:400px ;
+    height:300px;
+    background-color: #009999;
+    margin-left:-600px;
+    margin-top: 50px;
+}
+.shopleft button{
+    margin-left: 200px;
+    margin-top: 20px;
+    padding: 14px;
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+   <div class="header">
+    <div class="heading">
+        <h1>App Store</h1>
+    </div>
+    <div class="nav">
+        
+          <a href="home.html">HOME</a>
+           <a href="about.html">ABOUT</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="contact.html">CONTACT</a>
+           <a href="logout.html">LOG OUT</a>
+    </div>
+<div class="icon">
+    <i class="fa fa-cart-arrow-down"></i>
+</div>
+   </div>
+   <div class="shop">
+    <div class="shopleft">
+        <h3>WELCOME TO </h3>
+        <h1>Thapa Ecommerce</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam non numquam modi inventore molestias magni quisquam corporis error incidunt, necessitatibus laborum sed ratione iusto rerum expedita quasi accusantium perferendis soluta cum?</p>
+        <button><a href="contact.html">Shop Now</a></button>
+    </div>
+    <div class="shopright">
+        <div class="image">
+            <img src="picture.jpeg" alt="">
+        </div>
+    </div>
+   </div>
+</body>
+</html>
